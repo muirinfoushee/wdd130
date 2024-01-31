@@ -1,8 +1,42 @@
+
 body {
-    background-color: lightblue;
+    background-color:rgb(252, 101, 126);
+    margin: 0;
+    padding: 0;
 }
-    .nav_link {
-        padding: 10px;
-        color: black;
-        font-size: 1.3cm;
-    }
+
+/* Navigation Links */
+.nav_link {
+    padding: 10px;
+    color: black;
+    font-size: 1.3em; /* Adjusted to relative unit for better responsiveness */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: navy;
+}
+
+img {
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+#main_title {
+    font-size: 3em; 
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+}
+
