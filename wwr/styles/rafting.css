@@ -1,9 +1,7 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Revolution&family=Protest+Riot&family=Rock+Salt&display=swap')
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Revolution&family=Protest+Riot&family=Rock+Salt&display=swap');
 
 .home-title {
-    font-family: 'Rock Salt', 'Bradley Hand', 'Open Sans';
+    font-family: 'Rock Salt', 'Open Sans', sans-serif;
     font-size: 2em;
     color: black;
     margin-top: 10px;
@@ -14,6 +12,11 @@
     text-align: center;
     padding: 35px;
   }
+h1 {
+    font-family: 'Rock Salt';
+    color:#d9c2a3
+
+}
 .msg h2 {
     color: white;
   }
@@ -23,7 +26,7 @@
 }
 body {
     background-color: #fcfbfb;
-    font-family: Raleway, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -31,6 +34,7 @@ body {
 }
 header {
     background-color: #d9c2a3;
+    font-family: 'sans-serif';
 }
 h2 {
     margin: 0;
