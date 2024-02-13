@@ -1,0 +1,61 @@
+body {
+margin: 0;
+padding: 45px;
+background-color: rgb(255, 187, 219)
+}
+#content {
+max-width: 1000px;
+margin: 0 auto;
+}
+header, footer {
+background-color: rgb(233, 164, 254);
+}
+.nav_link {
+padding: 20px;
+font-size: 1.3em;
+}
+nav {
+display: flex;
+justify-content: center;
+}
+img {
+width: 300px;
+display: block;
+margin: 0 auto;
+padding: 10px;
+background-color: white;
+}
+    
+a {
+color: black;
+}
+nav a {
+text-decoration: none;
+text-align: center;
+}
+nav a:hover {
+color: rgb(1, 1, 200);
+background-color: white;
+}
+main, h3{
+text-align: center;
+padding: 10px;
+line-height: 35px;
+}
+h1 {
+padding: 5px;
+background-color: white;
+max-width: 1000px;
+text-align: center;
+}
+#main_title {
+font-size: 4em;
+text-align: center;
+}
+#sub_title {
+color: rgb(201, 139, 24);
+}
+footer {
+padding: 20px;
+text-align: center;
+}
