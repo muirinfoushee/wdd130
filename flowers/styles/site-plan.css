@@ -40,6 +40,24 @@ img {
   display: block;
   margin: 0 auto;
 }
+.home-img{
+  width: 400px;
+}
+.home-img2 {
+  width: 400px;
+}
+.pg2-img{
+  width: 400px;
+}
+.pg2-img2{
+  width: 400px;
+}
+.pg3-img{
+  width: 400px;
+}
+.pg3-img2{
+  width: 600px;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
