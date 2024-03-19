@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link type="text/css" rel="stylesheet" href="styles/flowers.css" />
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="styles/13a61b7630014917859dac0939abb061.png" alt="Sanders Floral Co. Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="site-plan.html">Site Plan</a>
+            </nav>
+        </header>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="styles" alt="flowers">
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-titles">Contact Us</h1>
+            </section>
+        </div>
+        <main class="main-section">
+            <img class="contactus-img" src="styles/rsz_pexels-teona-swift-6913174.jpg" alt="People rafting on the river">
+            <img class="contactus-img2" src="styles/rsz_florist-woman-making-fashion-modern-bouquet-different-flowers-wooden-background.jpg" alt="Second flower image">
+            <div class="contactus-text">
+                <p>Our Story: At Sanders Floral Co. flowers aren't just our business, they're our passion. Founded by Avery Sanders with a vision to spread happiness through flowers, we've been serving our local community and beyond with fresh blooms and exceptional service since 2019. With a commitment to quality, creativity, and customer satisfaction, we've earned a reputation as the go-to florist for all of life's special moments.
+                <p>Why Choose Sanders Floral Co.?</p>
+                <p>Quality and Freshness: We source the finest flowers from trusted growers to ensure long-lasting beauty and freshness.</p>
+                <p>Creativity and Customization: Our talented florists are skilled in creating unique and personalized floral designs to suit any style or preference.</p>
+                <p>Exceptional Service: From expert advice to seamless delivery, we're committed to providing an exceptional experience for every customer.</p>
+                <p>Community Involvement: We're proud to support our local community through charitable donations, volunteer efforts, and partnerships with other small businesses.</p>
+                <p>Connect with Us: We'd love to hear from you! Whether you have a question about our products and services, need assistance with your order, or simply want to share your floral story, we're here to help. Get in touch with us via phone, email, or social media!</p>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" />
+                    </li>
+                    <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" />
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li>
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+            </main>  
+        <footer>
+            <p> Dry &copy; 2024 - Muirin Foushee</p>
+            <p><a href="siteplan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://gmail.com">
+                    <img src="styles/rsz_message.png" alt="gmail icon">
+                </a>
+                <a href="https://message.com">
+                    <img src="styles/phone.png" alt="phone icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="styles/rsz_instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>         
+</body>
+</html>
